@@ -1,0 +1,269 @@
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.button-container {
+    display: flex;
+    background-color: rgb(27, 133, 219);
+    width: 400px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+      rgba(27, 133, 219, 0.5) 5px 10px 15px;
+}
+  
+.button, .button-carrito {
+    outline: 0 !important;
+    border: 0 !important;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+  
+.button:hover, .button-carrito:hover {
+    transform: translateY(-3px);
+}
+  
+.icon {
+    font-size: 20px;
+}
+
+.ContenidoGrid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.ContenidoGrid> .producto{
+  width: 300px;
+  height: 350px;
+  border: solid 2px #000;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.ContenidoGrid>.producto>.ImgCont{
+  position: relative;
+  border-bottom: solid 2px #000;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.ContenidoGrid>.producto>.ImgCont> img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.ContenidoGrid>.producto>.contenido>{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.ContenidoGrid>.producto>.contenido>p{
+  font-size: 18pt;
+}
+
+.ContenidoGrid>.producto>.contenido>button{
+  margin-top: 5px;
+  border: solid 2px blue;
+  cursor: pointer;
+  padding: 5px;
+  background: none;
+}
+
+h2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.precio {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.btncarrito {
+  margin-left: 4.1rem;
+  margin-top: 10px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+
+.carrito{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin-top: 10px;
+}
+
+table{
+  border: solid 2px #000;
+}
+
+table  tr  td .tab{
+  width: 140px;
+  text-align: center;
+  
+}
+
+
+.comprartodo{
+  margin-top: 5px;
+  border: solid 2px blue;
+  cursor: pointer;
+  padding: 5px;
+  background: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  padding-top: 50px;
+
+}
+
+.slider-frame {
+	width:70%;
+  height: 70%;
+	margin: 50px auto 0;
+	overflow: hidden;
+  border-radius: 15px;
+  border: solid rgb(17, 24, 163);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+  
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: 0;}
+}
+
+article{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.Botonistico {
+  width: 180px;
+  height: 40px;
+  background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+  border: none;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  box-shadow: 1px 3px 0px rgb(139, 113, 255);
+  transition-duration: .3s;
+  cursor: pointer;
+
+}
+
+.cartIcon {
+  width: 14px;
+  height: fit-content;
+}
+
+.cartIcon path {
+  fill: white;
+}
+
+.Botonistico:active {
+  transform: translate(2px ,0px);
+  box-shadow: 0px 1px 0px rgb(139, 113, 255);
+  padding-bottom: 1px;
+}
+
+#info{
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  font-size: 1.8rem;
+  color:navy;
+  list-style: none;
+}
+.fotoInfo{
+  width: 300px;
+  border-radius: 5px;
+  border: 5px green;
+  border-style: dashed;
+}
+
+
+.lista{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  list-style: none;
+  padding: 5px;
+}
+span{
+  color: black;
+  font-size: 2.1rem;
+}
